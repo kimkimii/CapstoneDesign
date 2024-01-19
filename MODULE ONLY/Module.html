@@ -2,8 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <title> Dashboard </title>
-    <link rel="stylesheet" href="style.css">
+    <title> Modules </title>
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="module.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
@@ -13,21 +14,20 @@
     <img src="image/logo.png" alt="Logo" class="rounded-circle mb-1" width="63" height="63">
     <span class="logo_name" style="font-size: 1.5rem; letter-spacing: 5px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);" >CUAI</span>
     </div>
-     <ul class="nav-links">
+    <ul class="nav-links">
       <li>
-       <div class="iocn-link">
         <a href="Dashboard.html">
           <i class='bx bx-grid-alt' ></i>
           <span class="link_name">Dashboard</span>
         </a>
         <ul class="sub-menu">
-          <li><a class="link_name" href="index.html">Dashboard</a></li>
+          <li><a class="link_name" href="Dashboard.html">Dashboard</a></li>
         </ul>
       </li>      
       <li>
         <div class="iocn-link">
           <a href="#">
-            <i class='bx bx-collection' ></i>
+            <i class='bx bx-user-circle' ></i>
             <span class="link_name">Users</span>
           </a>
           <i class='bx bxs-chevron-down arrow' ></i>
@@ -38,17 +38,17 @@
           <li><a href="#">Mobile Users</a></li>
         </ul>
       </li>
+
       <li>
-        <div class="iocn-link">
-          <a href="Module.html">
+          <a href="Module.html" class="active">
             <i class='bx bx-book-alt' ></i>
             <span class="link_name">Modules</span>
           </a>
-        </div>
         <ul class="sub-menu">
           <li><a class="link_name" href="Module.html">Manage Modules</a></li>
         </ul>
       </li>
+
       <li>
         <a href="#">
           <i class='bx bx-news' ></i>
@@ -68,12 +68,10 @@
         </ul>
       </li>
       <li>
-        <div class="iocn-link">
           <a href="#">
             <i class='bx bx-pen' ></i>
             <span class="link_name">Quizzes</span>
           </a>
-        </div>
         <ul class="sub-menu">
           <li><a class="link_name" href="#">Manage Quizzes</a></li>
         </ul>
@@ -96,15 +94,15 @@
           <li><a class="link_name" href="#">Manage Shop Items</a></li>
         </ul>
       </li>
+
       <li>
-        <div class="iocn-link">
-          <a href="#">
+          <a href="Certificates.html">
             <i class='bx bx-collection' ></i>
             <span class="link_name">Certificates</span>
           </a>
-        </div>
+          
         <ul class="sub-menu">
-          <li><a class="link_name" href="#">Manage Certificates</a></li>
+          <li><a class="link_name" href="Certificates.html">Manage Certificates</a></li>
         </ul>
       </li>
       <li>
@@ -137,7 +135,7 @@
   </div>
   <section class="home-section">
     <div class="home-content">
-      <i class='bx bx-menu' id="menuIcon" ></i>
+      <i class='bx bxs-chevron-right' id="menuIcon" ></i>
         <span id="date" ></span>
         <span id="clock" ></span> 
     </div>
@@ -147,53 +145,21 @@
     
     <div style="background-color: rgba(212, 212, 212, 0.5); padding: 20px; overflow-y: auto; border: 2px solid #3c6255; height: 100%; width: 100%;">
       <div class="header-container">
-  
- <div class="main">
-            <div class="cards">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">3000</div>
-                        <div class="card-name">Total Users</div>                     
-                    </div>
-                    <div class="icon-box">
-                        <i class="bx bx-user-circle"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">100</div>
-                        <div class="card-name">Modules</div>                     
-                    </div>
-                    <div class="icon-box">
-                        <i class="bx bx-book"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="number">100</div>
-                        <div class="card-name">Leaderboardss</div>
-                    </div>
-                    <div class="icon-box">
-                        <i class='bx bx-trophy'></i>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="charts">
-                <div class="chart">
-                    <h2>User Daily Activity Chart</h2>
-                    <div>
-                        <canvas id="lineChart"></canvas>
-                    </div>
-                </div>
-                </div>
-            </div>
-              <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
-        </div>
-    </div>
+        <h1>Module Card</h1>
+        <div class="divider"></div>
+      </div>
+    
+      <div class="button-container">
+        <button class="add-button" onclick="addCard()">Add Module</button>
+      </div>
+    
+      <div class="card-container" id="cardContainer">
+        <!-- Existing cards will be dynamically added here -->
+      </div>
 
     </div>
   </section>
-  <script src="script.js"></script>
+  <script src="navigation.js"></script>
+  <script src="module.js"></script>
 </body>
 </html>

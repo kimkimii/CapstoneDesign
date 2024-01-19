@@ -1,0 +1,645 @@
+
+  <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Newsfeed </title>
+    <link rel="stylesheet" href="Newsfeed.css">
+    <link rel="stylesheet" href="Navigation.css">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details my-4">
+    <img src="image/logo.png" alt="Logo" class="rounded-circle mb-1" width="63" height="63">
+    <span class="logo_name" style="font-size: 1.5rem; letter-spacing: 5px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);" >CUAI</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="Dashboard.html">Dashboard</a></li>
+        </ul>
+      </li>      
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-user-circle' ></i>
+            <span class="link_name">Users</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Manage Users</a></li>
+          <li><a href="#">Staffs</a></li>
+          <li><a href="#">Mobile Users</a></li>
+        </ul>
+      </li>
+
+      <li>
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Modules</span>
+          </a>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="Module.html">Manage Modules</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#"  class="active">
+          <i class='bx bx-news' ></i>
+          <span class="link_name">Newsfeed</span>
+        </a>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Manage Newsfeed</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-chat' ></i>
+          <span class="link_name">Chats</span>
+        </a>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Manage Chats</a></li>
+        </ul>
+      </li>
+      <li>
+          <a href="#">
+            <i class='bx bx-pen' ></i>
+            <span class="link_name">Quizzes</span>
+          </a>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Manage Quizzes</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-brain' ></i>
+          <span class="link_name">Assessments</span>
+        </a>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Manage Assessments</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cart-alt'></i>
+          <span class="link_name">Shop Items</span>
+        </a>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Manage Shop Items</a></li>
+        </ul>
+      </li>
+
+      <li>
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Certificates</span>
+          </a>
+          
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Manage Certificates</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Settings</span>
+        </a>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Settings</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+        <a href="#">
+        <img src="image/test.gif" alt="profileImg">
+        </a>
+        <ul class="sub-menu">
+          <li><a class="link_name">Logout</a></li>
+        </ul>
+      </div>
+      <div class="name-job">
+        <div class="profile_name">Admin01</div>
+        <div class="job">Admin</div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bxs-chevron-right' id="menuIcon" ></i>
+        <span id="date" ></span>
+        <span id="clock" ></span> 
+    </div>
+  <i class='bx bx-bell notification-icon'></i>
+    </div>
+
+   <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UrBook</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- header starts -->
+    <div class="header">
+      <div class="header__left">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons
+    /thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px Facebook_f_logo_%282019%29.svg.png"alt="" />
+        <div class="header__input">
+          <span class="material-icons"> search </span>
+          <input type="text" placeholder="Search Urbania" />
+        </div>
+      </div>
+
+      <div class="header__middle">
+        <div class="header__option active">
+          <span class="material-icons"> home </span>
+        </div>
+        <div class="header__option">
+          <span class="material-icons"> flag </span>
+        </div>
+        <div class="header__option">
+          <span class="material-icons"> subscriptions </span>
+        </div>
+        <div class="header__option">
+          <span class="material-icons"> storefront </span>
+        </div>
+        <div class="header__option">
+          <span class="material-icons"> supervised_user_circle </span>
+        </div>
+      </div>
+
+      <div class="header__right">
+        <div class="header__info">
+          <img
+            class="user__avatar"
+            src="data:image/png"
+            alt=""
+          />
+          <h4>John Carlo Regis</h4>
+        </div>
+        <span class="material-icons"> add </span>
+        <span class="material-icons"> forum </span>
+        <span class="material-icons"> notifications_active </span>
+        <span class="material-icons"> expand_more </span>
+      </div>
+    </div>
+    <!-- header ends -->
+
+    <!-- main body starts -->
+    <div class="main__body">
+      <!-- sidebar starts -->
+      
+
+      <!-- feed starts -->
+      <div class="feed">
+        <div class="storyReel">
+          <!-- story starts -->
+          <div
+            style="
+              background-image: url('https://images.unsplash.com/photo-1527082395-e939b847da0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+            "
+            class="story"
+          >
+            <img
+              class="user__avatar story__avatar"
+              src="https://www.shareicon.net/data/2016/05/24/770139_man_512x512.png"
+              alt=""
+            />
+            <h4>John Luigi Balugo</h4>
+          </div>
+          <!-- story ends -->
+
+          <!-- story starts -->
+          <div
+            style="
+              background-image: url('https://cellularnews.com/wp-content/uploads/2020/04/Delete-photo-337x600.jpg');
+            "
+            class="story"
+          >
+            <img
+              class="user__avatar story__avatar"
+              src="image/kween.jpg"
+              alt=""
+            />
+            <h4>Kim Bryan Ampo</h4>
+          </div>
+          <!-- story ends -->
+
+          <!-- story starts -->
+          <div
+            style="
+              background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTBHC2s4NFdzXEsVzvBPGjkrSePQa-8XFuNtQ&usqp=CAU');
+            "
+            class="story"
+          >
+            <img
+              class="user__avatar story__avatar"
+              src="image/kween.jpg"
+              alt=""
+            />
+            <h4>Gerald Condes</h4>
+          </div>
+          <!-- story ends -->
+
+          <!-- story starts -->
+          <div
+            style="
+              background-image: url('https://images.unsplash.com/photo-1527082395-e939b847da0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+            "
+            class="story"
+          >
+            <img
+              class="user__avatar story__avatar"
+              src="image/kween.jpg"
+              alt=""
+            />
+            <h4>John Dril De Juan</h4>
+          </div>
+          <!-- story ends -->
+
+          <!-- story starts -->
+          <div
+            style="
+              background-image: url('https://cellularnews.com/wp-content/uploads/2020/04/Delete-photo-337x600.jpg');
+            "
+            class="story"
+          >
+            <img
+              class="user__avatar story__avatar"
+              src="https://image.freepik.com/free-vector/businessman-avatar-cartoon-character-profile_18591-50584.jpg"
+              alt=""
+            />
+            <h4>Doc. Tano</h4>
+          </div>
+          <!-- story ends -->
+
+          <!-- story starts -->
+          <div
+            style="
+              background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTBHC2s4NFdzXEsVzvBPGjkrSePQa-8XFuNtQ&usqp=CAU');
+            "
+            class="story"
+          >
+            <img
+              class="user__avatar story__avatar"
+              src="image/kween.jpg"
+              alt=""
+            />
+            <h4>Jeramy Ontangco</h4>
+          </div>
+          <!-- story ends -->
+        </div>
+
+        <!-- message sender starts -->
+        <div class="messageSender">
+          <div class="messageSender__top">
+            <img
+              class="user__avatar"
+              src="image/kween.jpg"
+              alt=""
+            />
+            <form>
+              <input class="messageSender__input" placeholder="What's on your mind?" type="text" />
+            </form>
+          </div>
+
+          <div class="messageSender__bottom">
+            <div class="messageSender__option">
+              <span style="color: red" class="material-icons"> videocam </span>
+              <h3>Live</h3>
+            </div>
+
+            <div class="messageSender__option">
+              <span style="color: green" class="material-icons"> photo_library </span>
+              <h3>Photo</h3>
+            </div>
+
+            <div class="messageSender__option">
+              <span style="color: orange" class="material-icons"> insert_emoticon </span>
+              <h3>Feeling</h3>
+            </div>
+          </div>
+        </div>
+        <!-- message sender ends -->
+
+        <!-- post starts -->
+        
+        <div class="post">
+          <div class="post__top">
+            <img
+              class="user__avatar post__avatar"
+              src="image/lil.jpg"
+              alt=""
+            />
+            <div class="post__topInfo">
+              <h3>Doggo</h3>
+              <p>25 April at 20:30</p>
+            </div>
+          </div>
+
+          <div class="post__bottom">
+            <p>Message</p>
+          </div>
+
+          <div class="post__image">
+            <img
+              src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+              alt=""
+            />
+          </div>
+
+          <div class="post__options">
+            <div class="post__option">
+              <span class="material-icons"> thumb_up </span>
+              <p>Like</p>
+            </div>
+
+            <div class="post__option">
+              <span class="material-icons"> chat_bubble_outline </span>
+              <p>Comment</p>
+            </div>
+
+            <div class="post__option">
+              <span class="material-icons"> near_me </span>
+              <p>Share</p>
+            </div>
+          </div>
+        </div>
+        <!-- post ends -->
+
+        <!-- post starts -->
+        <div class="post">
+          <div class="post__top">
+            <img
+              class="user__avatar post__avatar"
+              src="data:image/png"
+              alt=""
+            />
+            <div class="post__topInfo">
+              <h3>Rene Gay</h3>
+              <p>25 April at 20:30</p>
+            </div>
+          </div>
+
+          <div class="post__bottom">
+            <p>Post Without Image</p>
+          </div>
+
+          <div class="post__options">
+            <div class="post__option">
+              <span class="material-icons"> thumb_up </span>
+              <p>Like</p>
+            </div>
+
+            <div class="post__option">
+              <span class="material-icons"> chat_bubble_outline </span>
+              <p>Comment</p>
+            </div>
+
+            <div class="post__option">
+              <span class="material-icons"> near_me </span>
+              <p>Share</p>
+            </div>
+          </div>
+        </div>
+        <!-- post ends -->
+
+        <!-- post starts -->
+        <div class="post">
+          <div class="post__top">
+            <img
+              class="user__avatar post__avatar"
+              src="data:image/png"
+              alt=""
+            />
+            <div class="post__topInfo">
+              <h3>Kap. na Maganda</h3>
+              <p>25 April at 20:30</p>
+            </div>
+          </div>
+
+          <div class="post__bottom">
+            <p>Message</p>
+          </div>
+
+          <div class="post__image">
+            <img src="https://wallpapercave.com/wp/wp7357832.jpg" alt="" />
+          </div>
+
+          <div class="post__options">
+            <div class="post__option">
+              <span class="material-icons"> thumb_up </span>
+              <p>Like</p>
+            </div>
+
+            <div class="post__option">
+              <span class="material-icons"> chat_bubble_outline </span>
+              <p>Comment</p>
+            </div>
+
+            <div class="post__option">
+              <span class="material-icons"> near_me </span>
+              <p>Share</p>
+            </div>
+          </div>
+        </div>
+        <!-- post ends -->
+      </div>
+      <!-- feed ends -->
+
+    
+      </div>
+    </div>
+    <!-- main body ends -->
+
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0"
+      nonce="zUxEq08J"
+    ></script>
+  </body>
+</html>
+
+    
+     
+      <div class="header-container">
+      <div class="main">
+        
+      
+      </div>
+      </div>
+
+
+
+
+
+
+<!--TOP POST-->
+      <div class="header-container">
+        <div class="main">
+          <div class="container2">
+   
+            <div class="filter-container">   
+              <button class="filter-button" onclick="toggleFilterOptions()"> Category </button>
+              <div class="filter-options" id="filterOptions">
+                <div class="filter-option">Date</div>
+                <div class="filter-option">Views</div>
+                <div class="filter-option">Engagements</div>
+              </div>
+            </div>
+
+
+            <div class="box">
+              <div class="album-name">
+              </div>
+              <div class="parent-div">
+                <div class="dp-img">
+                  <img src="image/kap.png" alt="">
+                  <div>
+                    <h4>Kap na Maganda</h4>
+                    <div class="date-ico">
+                      <p>December 25, 2023 &middot;</p>
+                      <svg color="#65676B" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm-1-2.05V18q-.825 0-1.413-.588T9 16v-1l-4.8-4.8q-.075.45-.138.9T4 12q0 3.025 1.988 5.3T11 19.95Zm6.9-2.55q.5-.55.9-1.188t.662-1.325q.263-.687.4-1.412T20 12q0-2.45-1.363-4.475T15 4.6V5q0 .825-.588 1.413T13 7h-2v2q0 .425-.288.713T10 10H8v2h6q.425 0 .713.288T15 13v3h1q.65 0 1.175.388T17.9 17.4Z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="icon-back">
+                  <svg color="gray" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M16 12a2 2 0 0 1 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2m-6 0a2 2 0 0 1 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2m-6 0a2 2 0 0 1 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2Z" />
+                  </svg>
+                </div>
+            
+              </div>
+            
+              <div class="cover">
+                <img src="image/POST.jpg" alt="">
+              </div>
+            
+              <div class="react">
+                <svg color="#EF3756" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2M9.75 7.82c.87 0 1.7.41 2.25 1.05c.55-.64 1.38-1.05 2.25-1.05c1.54 0 2.75 1.21 2.75 2.75c0 1.89-1.7 3.43-4.28 5.77L12 17l-.72-.66C8.7 14 7 12.46 7 10.57c0-1.54 1.21-2.75 2.75-2.75Z" />
+                </svg>
+                <p>John Carlo Regis and others</p>
+              </div>      
+            </div>
+  
+            <div class="box">
+              <div class="album-name">
+              </div>
+              <div class="parent-div">
+                <div class="dp-img">
+                  <img src="image/lil.jpg" alt="">
+                  <div>
+                    <h4>Doggo</h4>
+                    <div class="date-ico">
+                      <p>December 25, 2023 &middot;</p>
+                      <svg color="#65676B" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm-1-2.05V18q-.825 0-1.413-.588T9 16v-1l-4.8-4.8q-.075.45-.138.9T4 12q0 3.025 1.988 5.3T11 19.95Zm6.9-2.55q.5-.55.9-1.188t.662-1.325q.263-.687.4-1.412T20 12q0-2.45-1.363-4.475T15 4.6V5q0 .825-.588 1.413T13 7h-2v2q0 .425-.288.713T10 10H8v2h6q.425 0 .713.288T15 13v3h1q.65 0 1.175.388T17.9 17.4Z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="icon-back">
+                  <svg color="gray" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M16 12a2 2 0 0 1 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2m-6 0a2 2 0 0 1 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2m-6 0a2 2 0 0 1 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2Z" />
+                  </svg>
+                </div>
+            
+              </div>
+            
+              <div class="cover">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            
+              <div class="react">
+                <svg color="#EF3756" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2M9.75 7.82c.87 0 1.7.41 2.25 1.05c.55-.64 1.38-1.05 2.25-1.05c1.54 0 2.75 1.21 2.75 2.75c0 1.89-1.7 3.43-4.28 5.77L12 17l-.72-.66C8.7 14 7 12.46 7 10.57c0-1.54 1.21-2.75 2.75-2.75Z" />
+                </svg>
+                <p>John Carlo Regis and others</p>
+              </div>
+              <hr>
+            </div>
+  
+            <div class="box">
+              <div class="album-name">
+              </div>
+       
+              <div class="parent-div">
+                <div class="dp-img">
+                  <img src="image/kween.jpg" alt="">
+                  <div>
+                    <h4>All Purpose Kween</h4>
+                    <div class="date-ico">
+                      <p>December 25, 2023 &middot;</p>
+                      <svg color="#65676B" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm-1-2.05V18q-.825 0-1.413-.588T9 16v-1l-4.8-4.8q-.075.45-.138.9T4 12q0 3.025 1.988 5.3T11 19.95Zm6.9-2.55q.5-.55.9-1.188t.662-1.325q.263-.687.4-1.412T20 12q0-2.45-1.363-4.475T15 4.6V5q0 .825-.588 1.413T13 7h-2v2q0 .425-.288.713T10 10H8v2h6q.425 0 .713.288T15 13v3h1q.65 0 1.175.388T17.9 17.4Z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="icon-back">
+                  <svg color="gray" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M16 12a2 2 0 0 1 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2m-6 0a2 2 0 0 1 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2m-6 0a2 2 0 0 1 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2Z" />
+                  </svg>
+                </div>
+            
+              </div>
+            
+              <div class="cover">
+                <p>Pantog, pantog, pantog,
+                  para akong nauuntog,
+                  'yung ulo ko'y muntik na sum4bog,
+                  bilbil ko pa'y aalog-aalog,
+                  tapos baka bigla akong makalog,
+                  sarap tuloy kumain ng loglog,
+                  okay bye, ako ngayon ay matutulog.
+                  </p>
+              </div>
+            
+              <div class="react">
+                <svg color="#EF3756" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2M9.75 7.82c.87 0 1.7.41 2.25 1.05c.55-.64 1.38-1.05 2.25-1.05c1.54 0 2.75 1.21 2.75 2.75c0 1.89-1.7 3.43-4.28 5.77L12 17l-.72-.66C8.7 14 7 12.46 7 10.57c0-1.54 1.21-2.75 2.75-2.75Z" />
+                </svg>
+                <p>John Carlo Regis and others</p>
+              </div>
+              <hr>  
+            </div>
+  
+        </div>
+        </div>
+
+  </section>
+  <script src="Newsfeed.js"></script>
+  <script src="toppost.js"></script>
+</body>
+</html>
+

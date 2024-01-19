@@ -2,10 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <title> Navigation </title>
-    <link rel="stylesheet" href="style.css">
+    <title> Certificate </title>
+    <link rel="stylesheet" href="certificate.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
   <div class="sidebar close">
@@ -20,13 +20,13 @@
           <span class="link_name">Dashboard</span>
         </a>
         <ul class="sub-menu">
-          <li><a class="link_name" href="index.html">Dashboard</a></li>
+          <li><a class="link_name" href="Dashboard.html">Dashboard</a></li>
         </ul>
       </li>      
       <li>
         <div class="iocn-link">
           <a href="#">
-            <i class='bx bx-collection' ></i>
+            <i class='bx bx-user-circle' ></i>
             <span class="link_name">Users</span>
           </a>
           <i class='bx bxs-chevron-down arrow' ></i>
@@ -37,17 +37,17 @@
           <li><a href="#">Mobile Users</a></li>
         </ul>
       </li>
+
       <li>
-        <div class="iocn-link">
           <a href="Module.html">
             <i class='bx bx-book-alt' ></i>
             <span class="link_name">Modules</span>
           </a>
-        </div>
         <ul class="sub-menu">
           <li><a class="link_name" href="Module.html">Manage Modules</a></li>
         </ul>
       </li>
+
       <li>
         <a href="#">
           <i class='bx bx-news' ></i>
@@ -96,12 +96,11 @@
         </ul>
       </li>
       <li>
-        <div class="iocn-link">
-          <a href="#">
+        <a href="Certificates.html" class="active">
             <i class='bx bx-collection' ></i>
             <span class="link_name">Certificates</span>
           </a>
-        </div>
+          
         <ul class="sub-menu">
           <li><a class="link_name" href="#">Manage Certificates</a></li>
         </ul>
@@ -136,17 +135,63 @@
   </div>
   <section class="home-section">
     <div class="home-content">
-      <i class='bx bx-menu' id="menuIcon" ></i>
+      <i class='bx bxs-chevron-right' id="menuIcon" ></i>
         <span id="date" ></span>
         <span id="clock" ></span> 
     </div>
+  <i class='bx bx-bell notification-icon'></i>
 
-    <div style="background-color: rgba(212, 212, 212, 0.5); padding: 20px; border: 2px solid #3c6255; height: 100%; width: 100%;">
-    <p>content goes here HEHEHEHEHEHEHE!!!!!!!!!!</p>
+  <div style="background-color: rgba(212, 212, 212, 0.5); padding: 20px; overflow-y: auto; border: 2px solid #3c6255; height: 100%; width: 100%;">
+
+    <main>
+      <div class="certificate-container">
+        <img src="image/cert.png" alt="Certificate" class="certificate">
+        <div class="layer">
+          <img src="https://i.pinimg.com/736x/96/0c/ca/960ccacff2af96cb6a989c8fffd1d024.jpg" alt="Layer 1">
+          <img src="https://i.pinimg.com/736x/96/0c/ca/960ccacff2af96cb6a989c8fffd1d024.jpg" alt="Layer 2">
+          <img src="https://i.pinimg.com/736x/96/0c/ca/960ccacff2af96cb6a989c8fffd1d024.jpg" alt="Layer 3">
+      </div>
+      </div>
+      
+      <div class="card-container">
+        <div class="cardc">
+          <h2>68</h2>
+          <p>Total Users with E-Certificate</p>
+          <!-- Add relevant content or data for the total users with e-certificate -->
+        </div>
+  
+        <div class="cardc">
+          <h2>32</h2>
+          <p>Total Users with E-Certificate</p>
+          <!-- Add relevant content or data for the total users without e-certificate -->
+        </div>
+      </div>
+<div class="leaderboard">
+        <table id="leaderboardTable">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Certificate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be added dynamically using JavaScript -->
+            </tbody>
+        </table>
+    </div>
+ <script>
+        // Sample data for the leaderboard
+    
+
+        // Call the function to populate the leaderboard on page load
+       
+    </script>
+
+    </main>
 
     </div>
   </section>
-  <i class='bx bx-bell notification-icon'></i>
-  <script src="script.js"></script>
+  <script src="navigation.js"></script>
 </body>
 </html>

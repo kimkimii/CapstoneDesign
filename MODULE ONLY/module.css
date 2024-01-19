@@ -1,0 +1,115 @@
+/* MODULE CSS */
+.header-container,
+.divider {
+  margin-bottom: 20px;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.button-container {
+  margin-bottom: 20px;
+  text-align: center; 
+}
+
+/* Style for buttons */
+.button-container button {
+  padding: 10px 15px;
+  background-color: transparent; 
+  color: black;
+  border: 2px solid #3c6255; 
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.button-container button:hover {
+  color: green; 
+  border-color: darkgreen; 
+}
+
+/* Style for the delete button */
+.button-container button.delete-button {
+  border-color: red; 
+}
+
+.button-container button.delete-button:hover {
+  color: red;
+  border-color: darkred;
+}
+
+.card-container {
+  display: flex; 
+  justify-content: flex-start; 
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Custom card styles */
+.custom-card {
+  width: 15%;
+  min-width: 200px;
+  background-color: transparent; 
+  border: 1px solid #3c6255;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+}
+
+
+/* Header styles */
+.custom-card .card-header {
+  font-size: 18px;
+  color: #3c6255;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+
+
+/* Content styles */
+.custom-card .card-content {
+  padding: 20px;
+  text-align: justify; 
+}
+
+.delete-icon {
+  position: absolute;
+  right: 10px; 
+  top: 5px; 
+  cursor: pointer;
+  font-size: 18px;
+  color: #3c6255; 
+  margin: 5px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+
+.edit-icon {
+  position: absolute;
+  right: 35px;
+  top: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #3c6255; 
+  margin: 5px;
+}
